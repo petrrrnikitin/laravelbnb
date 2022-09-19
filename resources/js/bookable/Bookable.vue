@@ -11,10 +11,10 @@
                     <div v-else> Loading ...</div>
                 </div>
             </div>
-            <review-list></review-list>
+            <review-list :bookable-id="this.$route.params.id"></review-list>
         </div>
         <div class="col-md-4 pb-4">
-                <Availability></Availability>
+                <Availability :bookable-id="this.$route.params.id"></Availability>
         </div>
     </div>
 
